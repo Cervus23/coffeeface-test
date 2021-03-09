@@ -1,5 +1,5 @@
 import React from "react";
-import { logo, bannerHeader } from "../../img/exports";
+import { logo, bannerHeader, promoImg } from "../../img/exports";
 import Button from "../../components/Button/index";
 import "./style.scss";
 
@@ -31,11 +31,21 @@ const Header = () => {
             A Revolution in Antibacterial, Antiviral Facial Cleaning
           </h1>
           <p className="banner-text">
-            Manuka honey antibacterial properties that help protect and seal
-            your skin
+            Manuka honey antibacterial propertiesthat help protect and seal your
+            skin
           </p>
           <Button text={"Shop now"} />
         </div>
+      </div>
+      <div className="promo-section">
+        <div className="promo-text-container">
+          <img className="promo-logo" src={logo} alt="logo" />
+          <p className="promo-text">
+            is an innovative approach to beauty. Uncomplicated. Sophisticated.
+            Declutter your daily skincare routine.
+          </p>
+        </div>
+        <img className="promo-img" src={promoImg} alt="promo" />
       </div>
     </div>
   );

@@ -20,6 +20,7 @@
     margin-top: 40px;
     margin-left: 60px;
     margin-right: 55px;
+    margin-bottom: 2px;
     .nav-bar {
       width: 660px;
       display: flex;
@@ -33,6 +34,7 @@
       :hover {
         color: #8a5137;
         border-bottom: 1px solid #8a5137;
+        margin-bottom: -1px;
       }
     }
     .cart-container {
@@ -59,15 +61,12 @@
   .banner-container {
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
-    .banner-img {
-    }
+    // margin-bottom: 35px;
     .banner-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      //   margin-right: 55px;
       .banner-title {
         font-weight: 300;
         font-size: 36px;
@@ -83,6 +82,31 @@
         text-align: center;
         margin: 0;
         margin-bottom: 35px;
+      }
+    }
+  }
+  .promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 435px;
+    background-color: #000;
+    .promo-text-container {
+      width: 428px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 130px;
+      .promo-logo {
+        height: 27px;
+      }
+      .promo-text {
+        margin: 0;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 170%;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 26px;
       }
     }
   }
