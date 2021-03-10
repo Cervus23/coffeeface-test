@@ -1,0 +1,62 @@
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 798px;
+  .reviews-title {
+    margin: 0;
+    margin-top: 90px;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 150%;
+  }
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 198px;
+    width: 598px;
+    .slide-btn {
+      width: 66px;
+      height: 43px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: url("../../img/icons/arrow.svg") no-repeat;
+      outline: none;
+      cursor: pointer;
+    }
+    .right {
+      transform: scaleX(-1);
+    }
+  }
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;
+    width: 2214px;
+    margin-top: 27px;
+    .review {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 650px;
+
+      .user-name {
+        margin: 0;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 170%;
+      }
+      .user-text {
+        margin: 0;
+        margin-top: 21px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 170%;
+        text-align: center;
+      }
+    }
+  }
+}

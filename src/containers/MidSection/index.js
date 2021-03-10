@@ -55,14 +55,14 @@ const MidSection = () => {
         </div>
       </div>
       <div className="banner-section">
-        <p className="banner-text">
+        <h2 className="banner-title">
           Exfoliate.
           <br /> Serum. <br />
           Moisturize.
-        </p>
+        </h2>
       </div>
       <div className="HTU-section">
-        <p className="HTU-text">How to use the CoffeeFace</p>
+        <h2 className="HTU-title">How to use the CoffeeFace</h2>
         <div className="HTU-container">
           {howToUse.map((item) => (
             <div className="HTU-item" key={item.id}>

@@ -41,7 +41,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
-      background: url("../../img/cart.svg") bottom left no-repeat;
+      background: url("../../img/icons/cart.svg") bottom left no-repeat;
       width: 22px;
       height: 24px;
       .goods {
@@ -61,7 +61,6 @@
   .banner-container {
     display: flex;
     align-items: center;
-    // margin-bottom: 35px;
     .banner-content {
       display: flex;
       flex-direction: column;
