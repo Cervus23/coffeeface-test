@@ -1,6 +1,7 @@
-import Header from "./containers/Header/index";
-import MidSection from "./containers/MidSection/index";
+import Header from "./containers/Header";
+import MidSection from "./containers/MidSection";
 import Reviews from "./containers/Reviews";
+import Blog from "./containers/Blog";
 import "./App.scss";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <MidSection />
       <Reviews />
+      <Blog />
     </div>
   );
 }

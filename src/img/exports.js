@@ -17,3 +17,11 @@ export { default as treatment } from "./icons/treatment.svg";
 export { default as waiting } from "./icons/waiting.svg";
 
 export { default as user1 } from "./users/user1.png";
+
+export { default as blogBanner } from "./blog-img/blog-banner.png";
+export { default as blog1 } from "./blog-img/blog-1.png";
+export { default as blog2 } from "./blog-img/blog-2.png";
+export { default as blog3 } from "./blog-img/blog-3.png";
+export { default as partners } from "./blog-img/partners.png";
+
+export { default as blogBgr } from "./blog-img/blog-bgr.svg";
