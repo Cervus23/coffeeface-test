@@ -25,3 +25,5 @@ export { default as blog3 } from "./blog-img/blog-3.png";
 export { default as partners } from "./blog-img/partners.png";
 
 export { default as blogBgr } from "./blog-img/blog-bgr.svg";
+
+export { default as subBanner } from "./sub-banner.png";

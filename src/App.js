@@ -2,6 +2,7 @@ import Header from "./containers/Header";
 import MidSection from "./containers/MidSection";
 import Reviews from "./containers/Reviews";
 import Blog from "./containers/Blog";
+import Subscribe from "./containers/Subscribe";
 import "./App.scss";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <MidSection />
       <Reviews />
       <Blog />
+      <Subscribe />
     </div>
   );
 }

@@ -1,0 +1,49 @@
+.subscribe-section {
+  height: 568px;
+  display: flex;
+  background: linear-gradient(
+      76.3deg,
+      rgba(252, 209, 194, 0.48) -41.01%,
+      rgba(252, 209, 194, 0.284083) 45.83%,
+      rgba(255, 255, 255, 0) 106.87%
+    ),
+    url("../../img/sub-banner.png") no-repeat top right;
+
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 738px;
+    margin-left: 133px;
+    margin-top: 104px;
+    .subscribe-title {
+      margin: 0;
+      font-weight: 200;
+      font-size: 40px;
+      line-height: 150%;
+      text-align: center;
+    }
+    .subscribe-text {
+      margin: 0;
+      margin-top: 27px;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 170%;
+      text-align: center;
+    }
+    .subscribe-form {
+      display: flex;
+      margin-top: 15px;
+      .subscribe-input {
+        width: 315px;
+        padding-left: 22px;
+        padding-right: 22px;
+        background: transparent;
+        border: 1px solid #000;
+        font-size: 16px;
+        line-height: 24px;
+        outline: none;
+      }
+    }
+  }
+}
