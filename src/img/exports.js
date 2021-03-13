@@ -27,3 +27,9 @@ export { default as partners } from "./blog-img/partners.png";
 export { default as blogBgr } from "./blog-img/blog-bgr.svg";
 
 export { default as subBanner } from "./sub-banner.png";
+
+export { default as joinUs1 } from "./join-us/joinUs-1.png";
+export { default as joinUs2 } from "./join-us/joinUs-2.png";
+export { default as joinUs3 } from "./join-us/joinUs-3.png";
+
+export { default as joinUsInsta } from "./join-us/joinUs-insta.svg";
