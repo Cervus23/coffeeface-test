@@ -1,9 +1,6 @@
 import React from "react";
 import {
   logo,
-  facebook,
-  twitter,
-  instagram,
   visa,
   amex,
   mastercard,
@@ -22,11 +19,7 @@ const footerMenu = [
   "Contact Us",
 ];
 
-const social = [
-  { id: "facebook", img: facebook },
-  { id: "twitter", img: twitter },
-  { id: "instagram", img: instagram },
-];
+const social = ["facebook", "twitter", "instagram"];
 
 const payments = [
   { id: "visa", img: visa },
@@ -51,13 +44,8 @@ const Footer = () => {
             ))}
           </nav>
           <div className="social-container">
-            {social.map((link) => (
-              <a
-                className="social-link"
-                id={link.id}
-                href="/"
-                key={link.id}
-              ></a>
+            {social.map((link, idx) => (
+              <a className="social-link" id={link} href="/" key={idx}></a>
             ))}
           </div>
         </div>
