@@ -1,3 +1,11 @@
+$facebook: url("../../img/footer-icons/facebook.svg");
+$twitter: url("../../img/footer-icons/twitter.svg");
+$instagram: url("../../img/footer-icons/instagram.svg");
+
+$facebookActive: url("../../img/footer-icons/facebookActive.svg");
+$twitterActive: url("../../img/footer-icons/twitterActive.svg");
+$instagramActive: url("../../img/footer-icons/instagramActive.svg");
+
 .footer {
   display: flex;
   justify-content: center;
@@ -19,8 +27,6 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      .logo {
-      }
       .footer-menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -35,13 +41,41 @@
           color: #ffffff;
           text-decoration: none;
         }
+        :hover {
+          color: #8a5137;
+        }
       }
     }
     .social-container {
       display: flex;
       min-width: 157px;
+      min-height: 22px;
       justify-content: space-between;
       max-height: fit-content;
+
+      .social-link {
+        min-width: 18px;
+        background-repeat: no-repeat;
+      }
+
+      #facebook {
+        background-image: $facebook;
+        &:hover {
+          background-image: $facebookActive;
+        }
+      }
+      #twitter {
+        background-image: $twitter;
+        &:hover {
+          background-image: $twitterActive;
+        }
+      }
+      #instagram {
+        background-image: $instagram;
+        &:hover {
+          background-image: $instagramActive;
+        }
+      }
     }
     .payment-container {
       display: flex;

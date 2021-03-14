@@ -52,9 +52,12 @@ const Footer = () => {
           </nav>
           <div className="social-container">
             {social.map((link) => (
-              <a className="social-link" href="/" key={link.id}>
-                <img className="social-icon" src={link.img} alt={link.id} />
-              </a>
+              <a
+                className="social-link"
+                id={link.id}
+                href="/"
+                key={link.id}
+              ></a>
             ))}
           </div>
         </div>
