@@ -33,3 +33,16 @@ export { default as joinUs2 } from "./join-us/joinUs-2.png";
 export { default as joinUs3 } from "./join-us/joinUs-3.png";
 
 export { default as joinUsInsta } from "./join-us/joinUs-insta.svg";
+
+export { default as facebook } from "./footer-icons/facebook.svg";
+export { default as twitter } from "./footer-icons/twitter.svg";
+export { default as instagram } from "./footer-icons/instagram.svg";
+
+export { default as visa } from "./footer-icons/visa.svg";
+export { default as amex } from "./footer-icons/amex.svg";
+export { default as mastercard } from "./footer-icons/mastercard.svg";
+export { default as jcb } from "./footer-icons/jcb.svg";
+export { default as discover } from "./footer-icons/discover.svg";
+export { default as dinersClub } from "./footer-icons/dinersClub.svg";
+
+export { default as logoBgr } from "./footer-icons/logo-bgr.svg";
