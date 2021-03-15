@@ -69,6 +69,9 @@
         .blog-card {
           width: 278px;
           margin-right: 10px;
+          .blog-img {
+            min-width: 279px;
+          }
           .blog-text {
             font-size: 14px;
           }
