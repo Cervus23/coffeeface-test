@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .joinUs-section {
   display: flex;
   flex-direction: column;
@@ -47,6 +49,48 @@
       font-weight: 300;
       font-size: 14px;
       line-height: 125.5%;
+    }
+  }
+  @include phone {
+    height: 360px;
+    .joinUs-title {
+      font-size: 30px;
+      line-height: 150%;
+      margin-top: 58px;
+      text-transform: lowercase;
+    }
+
+    .slider-container {
+      padding: 0;
+      margin-top: 35px;
+      width: 335px;
+      .slide-btn {
+        display: none;
+      }
+      .slide {
+        width: 105px;
+        height: 105px;
+      }
+      :nth-child(n + 5) {
+        display: none;
+      }
+    }
+    .joinUs-slogan {
+      flex-direction: column;
+      align-items: center;
+      width: 335px;
+      margin-top: 20px;
+      .joinUs-insta {
+        width: 13px;
+        height: 13px;
+      }
+      .slogan-text {
+        width: 258px;
+        margin: 0;
+        margin-top: 4px;
+        text-align: center;
+        font-size: 12px;
+      }
     }
   }
 }

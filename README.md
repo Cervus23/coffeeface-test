@@ -1,6 +1,6 @@
 # Coffeface
 
-This is a landing page for an cosmetics production company.
+This is a landing page for a cosmetics production company.
 
 ## Used technologies
 

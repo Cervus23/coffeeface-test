@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .reviews-section {
   display: flex;
   flex-direction: column;
@@ -56,6 +58,41 @@
         font-size: 18px;
         line-height: 170%;
         text-align: center;
+      }
+    }
+  }
+
+  @include phone {
+    height: 567px;
+    .reviews-title {
+      font-size: 30px;
+      margin-top: 57px;
+    }
+    .slider {
+      width: 335px;
+      margin-top: 145px;
+
+      .slide-btn {
+        width: 48px;
+        height: 32px;
+        background-size: contain;
+      }
+    }
+    .reviews-container {
+      .review {
+        width: 335px;
+        .user-photo {
+          width: 61px;
+          height: 61px;
+        }
+        .user-name {
+          font-size: 16px;
+          margin-top: 3px;
+        }
+        .user-text {
+          margin-top: 11px;
+          font-size: 14px;
+        }
       }
     }
   }

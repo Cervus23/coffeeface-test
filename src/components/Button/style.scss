@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .btn {
   display: flex;
   align-items: center;
@@ -8,4 +10,8 @@
   font-size: 16px;
   line-height: 24px;
   color: #fff;
+
+  @include phone {
+    height: 54px;
+  }
 }

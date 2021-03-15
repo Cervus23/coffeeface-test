@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .mid-section {
   display: flex;
   flex-direction: column;
@@ -133,6 +135,104 @@
           background-color: #ffffff;
           border-radius: 50%;
           border: 1px solid #8a5137;
+        }
+        .HTU-item-text {
+          margin: 0;
+          margin-top: 16px;
+          font-size: 20px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+  @include phone {
+    .discount-container {
+      flex-direction: column;
+      .discount-text-container {
+        order: -1;
+        width: 100%;
+        margin: 0;
+        .discount-title {
+          margin-top: 83px;
+          margin-bottom: 21px;
+          font-weight: 200;
+          font-size: 30px;
+          line-height: 130%;
+        }
+        .reviews-container {
+          align-items: center;
+          margin-bottom: 11px;
+          .reviews-text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 125.5%;
+          }
+          .stars {
+            height: 14px;
+            .star {
+              width: 14px;
+              height: 14px;
+              background-size: contain;
+            }
+          }
+        }
+        .discount-text {
+          width: 335px;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 170%;
+          margin-bottom: 12px;
+        }
+        .price-container {
+          .old-price {
+            font-size: 16px;
+          }
+        }
+      }
+      .img-container {
+        width: 100%;
+        background-size: 120%;
+        .discount-product {
+          width: 100%;
+        }
+      }
+    }
+    .banner-section {
+      background: url("../../img/mob-mid-banner.png");
+      height: 569px;
+      align-items: flex-start;
+      .banner-title {
+        margin-top: 64px;
+        font-size: 40px;
+        color: #000000;
+      }
+    }
+    .HTU-section {
+      height: 673px;
+      background-size: 150%;
+      background-position-y: -30px;
+      .HTU-title {
+        margin-top: 57px;
+        font-size: 30px;
+      }
+      .HTU-container {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 32px;
+        .HTU-item {
+          .HTU-item-img-container {
+            width: 86px;
+            height: 86px;
+            .HTU-item-img {
+              width: 34px;
+              height: 34px;
+            }
+          }
+          .HTU-item-text {
+            font-size: 16px;
+            margin-top: 16px;
+            margin-bottom: 32px;
+          }
         }
       }
     }

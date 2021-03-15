@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import "./style.scss";
 
-const Subscribe = () => {
+const Subscribe = ({ width }) => {
   return (
     <div className="subscribe-section">
       <div className="subscribe-container">
@@ -19,7 +19,7 @@ const Subscribe = () => {
             className="subscribe-input"
             placeholder="Your email"
           ></input>
-          <Button text="Subscribe" width={203} />
+          <Button text="Subscribe" width={width <= 375 ? 335 : 203} />
         </form>
       </div>
     </div>

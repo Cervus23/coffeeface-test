@@ -16,7 +16,7 @@ const howToUse = [
   { id: "waiting", img: waiting, text: "Wait 5 minutes" },
 ];
 
-const MidSection = () => {
+const MidSection = ({ width }) => {
   return (
     <div className="mid-section">
       <div className="discount-container">
@@ -51,7 +51,7 @@ const MidSection = () => {
             <p className="old-price">&nbsp; $84.99 &nbsp;</p>
             <p className="new-price">$64.99</p>
           </div>
-          <Button text={"Buy it now"} />
+          <Button text={"Buy it now"} width={width <= 375 ? 335 : 316} />
         </div>
       </div>
       <div className="banner-section">

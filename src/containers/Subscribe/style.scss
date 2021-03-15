@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .subscribe-section {
   height: 568px;
   display: flex;
@@ -43,6 +45,42 @@
         font-size: 16px;
         line-height: 24px;
         outline: none;
+      }
+    }
+  }
+  @include phone {
+    height: 886px;
+    flex-direction: column;
+    background: linear-gradient(
+        76.3deg,
+        rgba(252, 209, 194, 0.48) -41.01%,
+        rgba(252, 209, 194, 0.284083) 45.83%,
+        rgba(255, 255, 255, 0) 106.87%
+      ),
+      url("../../img/mob-sub-banner.png") no-repeat bottom right;
+    .subscribe-container {
+      width: 335px;
+      margin: 0;
+      align-self: center;
+      .subscribe-title {
+        font-size: 30px;
+        margin-top: 53px;
+      }
+      .subscribe-text {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+        .subscribe-input {
+          height: 54px;
+          box-sizing: border-box;
+          width: 100%;
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 10px;
+        }
       }
     }
   }

@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .header {
   width: 100%;
   display: flex;
@@ -21,6 +23,9 @@
     margin-left: 60px;
     margin-right: 55px;
     margin-bottom: 2px;
+    .menu {
+      display: none;
+    }
     .nav-bar {
       width: 660px;
       display: flex;
@@ -36,6 +41,9 @@
         border-bottom: 1px solid #8a5137;
         margin-bottom: -1px;
       }
+    }
+    .search {
+      display: none;
     }
     .cart-container {
       display: flex;
@@ -106,6 +114,82 @@
         text-align: center;
         color: #ffffff;
         margin-top: 26px;
+      }
+    }
+  }
+  @include phone {
+    background: url("../../img/mob-banner-header.png") no-repeat top 39px left;
+
+    .header-main {
+      margin-left: 19px;
+      margin-right: 16px;
+      margin-top: 10px;
+      align-items: flex-end;
+      .menu {
+        display: flex;
+        font-size: 14px;
+        line-height: 14px;
+      }
+      .nav-bar {
+        display: none;
+      }
+      .search {
+        display: flex;
+        width: 16px;
+        height: 16px;
+        background: url("../../img/icons/search.svg") no-repeat;
+      }
+    }
+    .banner-container {
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 700px;
+      .banner-img {
+        display: none;
+      }
+      .banner-content {
+        margin-bottom: 80px;
+        .banner-title {
+          width: 335px;
+          font-weight: 300;
+          font-size: 28px;
+          line-height: 140%;
+          margin-bottom: 10px;
+        }
+        .banner-text {
+          width: 311px;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .promo-section {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 580px;
+      .promo-img {
+        margin-top: -41px;
+        height: 404px;
+        width: 335px;
+        order: -1;
+      }
+      .promo-text-container {
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        .promo-logo {
+          margin-top: 41px;
+          width: 162px;
+          height: 16px;
+        }
+        .promo-text {
+          margin-top: 16px;
+          width: 335px;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 170%;
+        }
       }
     }
   }

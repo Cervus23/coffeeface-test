@@ -8,13 +8,14 @@ import Footer from "./containers/Footer";
 import "./App.scss";
 
 function App() {
+  const width = window.innerWidth;
   return (
     <div className="App">
-      <Header />
-      <MidSection />
+      <Header width={width} />
+      <MidSection width={width} />
       <Reviews />
       <Blog />
-      <Subscribe />
+      <Subscribe width={width} />
       <JoinUs />
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const Button = ({ text, onClick, width = 316 }) => {
+const Button = ({ text, onClick, width }) => {
   return (
     <div className="btn" style={{ width: `${width}px` }}>
       {text}

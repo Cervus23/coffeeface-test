@@ -6,6 +6,7 @@ export { default as starActive } from "./icons/star-active.svg";
 export { default as star } from "./icons/star.svg";
 
 export { default as bannerHeader } from "./banner-header.png";
+export { default as bannerHeaderMob } from "./mob-banner-header.png";
 export { default as promoImg } from "./promo-img.png";
 
 export { default as discountBgr } from "./discount-bgr.svg";

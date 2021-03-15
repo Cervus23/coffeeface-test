@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .blog-section {
   display: flex;
   flex-direction: column;
@@ -44,5 +46,40 @@
   }
   .partners {
     margin-top: 197px;
+  }
+  @include phone {
+    height: 605px;
+    .blog-container {
+      height: 367px;
+      background-image: url("../../img/blog-img/mob-blog-bgr.svg");
+      background-position: top -250px right;
+      .blog-banner {
+        margin-top: -80px;
+        width: 335px;
+      }
+      .blog-title {
+        margin-top: 59px;
+        font-size: 30px;
+      }
+      .blog-cards {
+        align-self: flex-start;
+        margin-top: 28px;
+        width: fit-content;
+        margin-left: 20px;
+        .blog-card {
+          width: 278px;
+          margin-right: 10px;
+          .blog-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .partners {
+      margin-top: 124px;
+      width: 734px;
+      align-self: flex-start;
+      margin-left: -276px;
+    }
   }
 }
