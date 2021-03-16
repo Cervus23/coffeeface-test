@@ -42,6 +42,7 @@ $instagramActive: url("../../img/footer-icons/instagramActive.svg");
           max-width: fit-content;
           color: #ffffff;
           text-decoration: none;
+          transition: all 0.1s ease;
         }
         :hover {
           color: #8a5137;
@@ -58,6 +59,7 @@ $instagramActive: url("../../img/footer-icons/instagramActive.svg");
       .social-link {
         min-width: 18px;
         background-repeat: no-repeat;
+        transition: all 0.1s ease;
       }
 
       #facebook {
@@ -68,6 +70,7 @@ $instagramActive: url("../../img/footer-icons/instagramActive.svg");
       }
       #twitter {
         background-image: $twitter;
+        min-width: 22px;
         &:hover {
           background-image: $twitterActive;
         }

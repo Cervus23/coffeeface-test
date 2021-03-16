@@ -17,27 +17,57 @@
   .slider-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+
     box-sizing: border-box;
     margin-top: 64px;
-    padding-left: 20px;
-    padding-right: 20px;
-    .slide-btn {
-      width: 25px;
-      height: 8px;
-      border: none;
-      padding: 0;
-      background: url("../../img/icons/arrow.svg") no-repeat;
-      outline: none;
+    .btns {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      .slide-btn {
+        z-index: 10;
+        min-width: 61px;
+        height: 210px;
+        border: none;
+        padding: 0;
+        background: url("../../img/icons/arrow.svg") no-repeat center center;
+        outline: none;
+        margin: 0;
+      }
+      .right {
+        transform: scaleX(-1);
+      }
     }
-    .right {
-      transform: scaleX(-1);
+
+    .slides-container {
+      display: flex;
+      justify-content: center;
+      transition: all 1s ease;
+      .slides {
+        min-width: 92.36vw;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: -10;
+        .slide {
+          margin: 0;
+        }
+      }
     }
-    :last-child {
-      margin-right: 0;
+    :nth-child(2) {
+      margin-left: 3.82vw;
+      margin-right: 3.82vw;
+    }
+    .side0 {
+      margin-left: 196.2vw;
+    }
+    .side2 {
+      margin-right: 196.2vw;
     }
   }
+
   .joinUs-slogan {
     display: flex;
     margin-top: 75px;
@@ -64,15 +94,19 @@
       padding: 0;
       margin-top: 35px;
       width: 335px;
-      .slide-btn {
+      .btns {
         display: none;
       }
-      .slide {
-        width: 105px;
-        height: 105px;
-      }
-      :nth-child(n + 5) {
-        display: none;
+      .slides-container {
+        .slides {
+          .slide {
+            width: 105px;
+            height: 105px;
+            &:nth-child(n + 4) {
+              display: none;
+            }
+          }
+        }
       }
     }
     .joinUs-slogan {

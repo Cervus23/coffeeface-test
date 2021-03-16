@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  logo,
-  bannerHeader,
-  bannerHeaderMob,
-  promoImg,
-} from "../../img/exports";
+import { logo, bannerHeader, promoImg } from "../../img/exports";
 import Button from "../../components/Button/index";
 import "./style.scss";
 
@@ -16,6 +11,7 @@ const Header = ({ width }) => {
   return (
     <div className="header">
       <div className="top-bar">Free shipping over $100</div>
+      <div className="header-bgr"></div>
       <div className="header-main">
         <div className="menu">Menu</div>
         <img className="logo" src={logo} alt="logo" />

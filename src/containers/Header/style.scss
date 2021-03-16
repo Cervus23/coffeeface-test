@@ -16,6 +16,21 @@
     font-size: 12px;
     line-height: 18px;
   }
+  .header-bgr {
+    position: absolute;
+    z-index: -1;
+    top: 38px;
+    width: 100%;
+    height: 850px;
+    background: linear-gradient(
+      101.72deg,
+      rgba(250, 178, 152, 0.48) 4.77%,
+      #f4ded6 28.36%,
+      #f8eae5 88.9%,
+      rgba(255, 255, 255, 0) 101.84%
+    );
+    opacity: 0.2;
+  }
   .header-main {
     display: flex;
     justify-content: space-between;
@@ -30,6 +45,7 @@
       width: 660px;
       display: flex;
       justify-content: space-between;
+
       .nav-link {
         text-decoration: none;
         color: #000;
@@ -119,7 +135,9 @@
   }
   @include phone {
     background: url("../../img/mob-banner-header.png") no-repeat top 39px left;
-
+    .header-bgr {
+      display: none;
+    }
     .header-main {
       margin-left: 19px;
       margin-right: 16px;
