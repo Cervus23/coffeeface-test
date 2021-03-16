@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { user1 } from "../../img/exports";
 import "./style.scss";
 
@@ -6,7 +6,8 @@ const reviews = [
   {
     id: "user1",
     photo: user1,
-    username: "Anna K.",
+    active: false,
+    username: "Anna T.",
     text: `The passage experienced a surge in popularity during the 1960s 
     when Letraset used it on their dry-transfer sheets, and again during the 
     90s as desktop publishers bundled the text with their software. Today it's 
@@ -17,7 +18,8 @@ const reviews = [
   {
     id: "user2",
     photo: user1,
-    username: "Anna T.",
+    active: true,
+    username: "Anna K.",
     text: `The passage experienced a surge in popularity during the 1960s 
     when Letraset used it on their dry-transfer sheets, and again during the 
     90s as desktop publishers bundled the text with their software. Today it's 
@@ -28,6 +30,7 @@ const reviews = [
   {
     id: "user3",
     photo: user1,
+    active: false,
     username: "Anna F.",
     text: `The passage experienced a surge in popularity during the 1960s 
     when Letraset used it on their dry-transfer sheets, and again during the 
@@ -39,14 +42,30 @@ const reviews = [
 ];
 
 const Reviews = () => {
+  const [side, setSide] = useState(1);
+
+  const onClickHandler = (slide) => {
+    if (slide === "left" && side > 0) {
+      setSide(side - 1);
+    }
+    if (slide === "right" && side < 2) {
+      setSide(side + 1);
+    }
+  };
   return (
     <div className="reviews-section">
       <h2 className="reviews-title">Testimonials</h2>
       <div className="slider">
-        <button className="slide-btn left"></button>
-        <button className="slide-btn right"></button>
+        <button
+          className="slide-btn left"
+          onClick={() => onClickHandler("left")}
+        ></button>
+        <button
+          className="slide-btn right"
+          onClick={() => onClickHandler("right")}
+        ></button>
       </div>
-      <div className="reviews-container">
+      <div className={`reviews-container side${side}`}>
         {reviews.map((review) => (
           <div className="review" key={review.id}>
             <img
