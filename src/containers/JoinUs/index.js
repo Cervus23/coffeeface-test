@@ -28,14 +28,6 @@ const slider = [
     { id: "slide18", img: joinUs3 },
   ],
 ];
-// const slider = [
-//   { id: "slide1", img: joinUs1 },
-//   { id: "slide2", img: joinUs2 },
-//   { id: "slide3", img: joinUs3 },
-//   { id: "slide4", img: joinUs1 },
-//   { id: "slide5", img: joinUs2 },
-//   { id: "slide6", img: joinUs3 },
-// ];
 
 const JoinUs = () => {
   const [side, setSide] = useState(1);
@@ -63,8 +55,8 @@ const JoinUs = () => {
           />
         </div>
         <div className={`slides-container side${side}`}>
-          {slider.map((slides) => (
-            <div className="slides">
+          {slider.map((slides, idx) => (
+            <div className="slides" key={idx}>
               {slides.map((slide) => (
                 <img
                   className="slide"

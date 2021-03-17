@@ -31,10 +31,14 @@
       justify-content: space-evenly;
       margin-top: 54px;
       width: 100%;
+      touch-action: none;
       .blog-card {
         display: flex;
         flex-direction: column;
         width: 427px;
+        .blog-img {
+          pointer-events: none;
+        }
         .blog-text {
           margin: 0;
           margin-top: 22px;
@@ -53,6 +57,7 @@
       height: 367px;
       background-image: url("../../img/blog-img/mob-blog-bgr.svg");
       background-position: top -250px right;
+      position: relative;
       .blog-banner {
         margin-top: -80px;
         width: 335px;
@@ -67,10 +72,13 @@
         width: fit-content;
         margin-left: 20px;
         .blog-card {
-          width: 278px;
           margin-right: 10px;
+          min-width: 278px;
+          max-width: 278px;
+
           .blog-img {
-            min-width: 279px;
+            min-width: 278px;
+            max-width: 278px;
           }
           .blog-text {
             font-size: 14px;
